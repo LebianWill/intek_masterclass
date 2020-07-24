@@ -1,0 +1,181 @@
+/* Secondary color #cb6828 */
+/* Primary color #2a57a7 */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  cursor: none;
+}
+body {
+  cursor: none;
+}
+.cursor,
+.cursorHover {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  pointer-events: none;
+  display: inline-block;
+  position: fixed;
+  z-index: 999999;
+  top: -19px;
+  left: -19px;
+  transform: translate (-19px, -19px);
+  border: 1.5px solid rgb(245, 5, 5);
+}
+.cursorHover {
+  box-shadow: 1px 1px 1px 3px rgba (222, 0, 0, 0.1),
+     -1px -1px 1px 3px rgba(222, 0, 0, 0.3),
+     1px 1px 1px 1px rgba(222, 0, 0, 0.3),
+     -1px -1px 1px 1px rgba(222, 0, 0, 0.3);
+}
+.vitrine {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.035), rgba(0, 0, 0, 0.4)),
+    url(/img/img1.jpg);
+  background-position: 50% 50%;
+  background-attachment: fixed;
+  height: 80vh;
+  position: relative;
+}
+.vitrine .bienvenue {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.vitrine nav {
+  height: 8vh;
+  background-color: transparent;
+  padding: 10px 10px;
+  display: flex;
+  justify-content: flex-end;
+  justify-items: center;
+  transition: 500ms ease;
+}
+#vitrine nav .logo img {
+  height: 5vh;
+  margin-left: 100px;
+}
+#vitrine nav ul a:hover {
+  cursor: unset;
+}
+nav.scrolled {
+  background-color: #ffffff;
+}
+.vitrine nav ul {
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+  margin-right: 100px;
+  margin-top: 10px;
+}
+
+.vitrine nav ul li a {
+  margin: 10px 20px;
+  font-size: 22px;
+  color: #2a57a7;
+  transition: 0.4s ease-out;
+  font-weight: 400;
+}
+.vitrine nav ul li a:hover {
+  text-decoration: none;
+  cursor: unset;
+}
+.vitrine .bienvenue {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.vitrine .bienvenue .inner-text h3 {
+  color: rgb(221, 132, 16);
+  font-size: 40px;
+  font-weight: 700;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.6);
+  text-transform: uppercase;
+  letter-spacing: 10px;
+}
+.vitrine .bienvenue .inner-text h5 {
+  color: #184fad;
+  font-size: 25px;
+  font-weight: 600;
+  margin-bottom: 30px;
+  letter-spacing: 5px;
+}
+.vitrine .bienvenue .cta-btn .btn {
+  width: 200px;
+  padding: 10px 0px;
+  margin: 0px 10px;
+  cursor: unset;
+  color: #ffffff;
+  border-color: white;
+  background-color: #3d6ab8;
+}
+
+/* Service */
+#service {
+  margin: 40px 0px;
+}
+#service .container .row {
+  text-align: center;
+}
+
+#service .container .row i {
+  font-size: 50px;
+  margin-bottom: 15px;
+  color: rgb(221, 113, 12);
+}
+#service .container .row p {
+  padding: 5px;
+}
+
+/* Call To Action */
+
+#cta1 {
+  margin: 40px 0px 0px 0px;
+}
+
+#cta1 .cta-img {
+  background-image: linear-gradient(
+      360deg,
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.2)
+    ),
+    url(/img/cta.jpg);
+  background-attachment: fixed;
+  height: 40vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#cta1 .cta-img h3 {
+  color: white;
+  font-size: 25px;
+}
+#cta1 .cta-img .btn-info {
+  color: white;
+  margin-top: 15px;
+  background-color: #cb6828 !important;
+  border-color: white;
+  width: 200px;
+  cursor: unset;
+}
+
+/* Team Member */
+#about {
+  height: 40vh;
+  padding: 30px;
+  background-color: rgba(190, 184, 184, 0.452);
+}
+#about .container .row div {
+  text-align: center;
+}
+#about .container .row div {
+  text-align: center;
+}
